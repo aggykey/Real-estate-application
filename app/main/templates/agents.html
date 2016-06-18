@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block content %}
+<p>We Feature Houses for Sale in Nairobi Kenya, Houses to rent in Nairobi and other Kenya Real Estate Listings such as Plots of Land for Sale in Kenya, Apartments in Nairobi, and Real Estate investments in Kwale, Narok, Nakuru, Machakos, Kajiado and Kilific Counties. You will find listings of  Plots, rentals, Apartments for Sale in Nairobi, Kileleshwa Apartments, Kitengela Plots, Lavington Houses, Runda Houses, among others<p>
+<div class="container">
+ {% block page_content %}
+<div class='col-lg-6'>
+{{ wtf.quick_form(form) }}
+</div>
+</div>
+
+{% endblock %}
+{% endblock %}

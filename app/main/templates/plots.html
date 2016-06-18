@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block page_content %}
+<ul class="list-group">
+{% for plot in plots %}
+<div class='col-lg-12'>
+ <li class="list-group-item">{{ plot.name }} <pre><span class="badge">{{ plot.Price }}</span> </pre> <pre>{{ plot.location}}</pre> <span class="badge">{{plot.Contact }}</span>  </li>
+</ul>
+</div>
+{% endfor %}
+{% endblock %}
